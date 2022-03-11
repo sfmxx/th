@@ -3,7 +3,7 @@ import pygame
 pygame.init()
 
 #display
-screen = pygame.display.set_mode((640, 478))
+screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Grungich")
 
 #Marisa
@@ -34,7 +34,7 @@ while running:
             marisaX += focus
         if usInput[pygame.K_UP] and marisaY > 0:
             marisaY -= focus
-        if usInput[pygame.K_DOWN] and marisaY < 434:
+        if usInput[pygame.K_DOWN] and marisaY < 436:
             marisaY += focus
     else:
         if usInput[pygame.K_LEFT] and marisaX > -6:
@@ -43,7 +43,7 @@ while running:
             marisaX += change
         if usInput[pygame.K_UP] and marisaY > 0:
             marisaY -= change
-        if usInput[pygame.K_DOWN] and marisaY < 434:
+        if usInput[pygame.K_DOWN] and marisaY < 436:
             marisaY += change
 
 
